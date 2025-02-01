@@ -1,0 +1,605 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #1D1A05;
+    background-color: whitesmoke;
+    font-size: 100%;
+}
+h1 {
+    font-size: 2em;
+    font-weight: 600;
+}
+h2 {
+    font-size: 2em;
+}
+h3 {
+    font-size: 1.1em;
+}
+h1, h2 {
+    line-height: 1.5em;
+    padding-top: 0.2em;
+}
+a {
+    color: black;
+    text-decoration: underline;
+}
+
+.button {
+    background-color: white;
+    color: black;
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 0.45em 1em;
+    border: none;
+    border-radius: 0.8em;
+    font-family: 'Montserrat';
+    border: 1px solid black;
+}
+.container {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.le-auto>h2, .le-piste>h2 {
+    padding-top: 0.5em;
+}
+
+.sr{
+  display:none;
+}
+
+/*************** BARRA DI NAVIGAZIONE ******************** */
+
+li{
+    list-style: none;
+    margin-left: 25px;
+}
+
+.header{
+    background-color: white;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border: 1px solid;
+    margin-top: 1em;
+  }
+.welcome{
+    display: none;
+}
+
+.header-logo {
+    font-size: 1.5em;
+    padding-top: 3em;
+    width: 15%;
+    text-indent: 0em;
+
+  }
+
+
+/*********** breadcrumb ************** */
+.breadcrumb{
+    padding-top: 1em;
+    margin-bottom: 2em;
+    font-weight: 600;
+}
+
+.breadcrumb a{
+    color: #CA3C25;
+}
+
+.breadcrumb p{
+    color: black;
+}
+
+/***********INDEX*******/
+.intro{
+  font-size: 1.3em;
+}
+
+/***** content automobili, content piste *****/
+.content-automobili,
+.content-piste {
+  display: flex;
+  flex-direction: column;
+}
+.content-automobili p, .content-piste p{
+    font-size: 1em;
+    font-weight: 600;
+}
+.content-automobili a[class="button"],
+.content-piste a[class="button"],
+.container a[class="black-link"] {
+  align-self: flex-end;
+  margin-top: 0.5em;
+  border:1px solid;
+}
+.welcome .button {
+  align-self: flex-start;
+}
+
+
+/*********** GALLERIA DI CARDS CON AUTO E PISTE DI INDEX.HTML ************** */
+.gallery {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/*************** RIGA DELLA GALLERIA COMPOSTA DA 3 CARDS ******************* */
+
+.gallery h2 {
+    padding-top: 1.2em;
+}
+/*****************SINGOLA CARD********************* */
+.gallery-item {
+    justify-content: space-between;
+    display: flex;
+    flex-basis: 28%;
+    flex-direction: column;
+    box-shadow: none;
+    border-radius: 0.8em;
+    text-align: center;
+    margin:0.8em;
+    border:1px solid;
+}
+
+.gallery-item img {
+    border-radius: 0.8em 0.8em 0 0;
+    width: 100%;
+    padding-bottom: 0.5em;
+}
+.content-automobili form, .content-piste form{
+    margin-top:1em;
+    margin-bottom:1em;
+}
+
+.gallery-item h4 {
+    padding-bottom: 0.5em;
+}
+.gallery-item a {
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+
+.gallery-item a[class="button"] {
+    margin: 1em 3em;
+    font-size: smaller;
+}
+
+.le-auto .gallery-item .button,
+.le-piste .gallery-item .button {
+  align-self: center;
+  justify-self: center;
+}
+
+fieldset{
+  border: none;
+}
+
+legend{
+  font-size: 1.4em;
+  font-weight: 600;
+  color: #570606;
+}
+/*****************FOOTER****************** */
+footer > .container {
+    width:auto;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 1140px;
+}
+.footer-container {
+    display: flex;
+	flex-direction: column;
+	background-color: white;
+	color: black;
+	margin-top: 4%;
+}
+.footer-content {
+    align-self: center;
+	display: flex;
+	flex-direction: row;
+	padding-top: 1em;
+	justify-content: space-between;
+}
+.contatti-container{
+	margin-right: 3em;
+}
+.social-container{
+	margin-left: 3em;
+}
+.footer-content h3 {
+    margin-bottom: 10px;
+    text-align:center;
+}
+.footer-content p {
+    line-height: 25px;
+}
+.footer-container p{
+	margin-top:1em;
+	text-align: center;
+}
+.footer-content a {
+	text-decoration: underline;
+}
+
+.validation-badge{
+	display: none;
+}
+/************** 404 *********** */
+.container-404 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+}
+
+.container-404 h2{
+    font-size: 2em;
+}
+.container-404 img {
+    width: 40%;
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+.button-img{
+    display: flex;
+    justify-content: space-around;
+}
+.button:active {
+    transform: scale(1);
+}
+
+.button-img form {
+    justify-self: center;
+    align-self: center;
+}
+
+/***************** LOGIN ***********************/
+.user-data-form {
+    width: 100%;
+    margin: 10vh auto 15vh auto;
+    padding:20px;
+    background-color: rgb(231, 230, 230);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-data-form h1, h2 {
+    text-align: center;
+    padding-top: 1em;
+    font-size: 20px;
+}
+
+
+/*********** CONTATTACI ********** */
+.input-row input, textarea {
+    border-radius: 10px;
+    border:solid 2px lightgray;
+    width: 100%;
+    font-family: 'Montserrat';
+    padding: 0 0 0 0.4em;
+    font-size: medium;
+    line-height: 2em;
+    resize: none;
+}
+
+.input-row textarea {
+    height: 4em;
+}
+.input-row.success input {
+    border-color: #09c372;
+}
+.input-row.error input {
+    border-color: #ff3860;
+}
+.contact-us {
+    padding-top: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact-us-form{
+    width: 75%;
+    margin-left:1em;
+}
+
+.contact-us-form .button-container{
+    text-align:center;
+}
+
+.superbroom-info{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin-right:1em;
+}
+.superbroom-info iframe {
+    margin-top:1em;
+    flex-shrink: 3;
+    height:100%;
+}
+.superbroom-info h4{
+    text-align:left;
+}
+
+/**************TORNA SU*****/
+
+#torna-su{
+    display:none;
+}
+
+/* ******* AUTO / PISTE****** */
+.carousel{
+    padding: 0;
+    text-align: center;
+    position:relative;
+}
+
+.carousel img {
+    border-radius: 0.8em;
+    width: 70%;
+    padding: 0;
+    margin: 0;
+}
+.hidden {
+  display: none;
+}
+
+#carousel-buttons button[class~="current"]{
+    display: none;
+}
+
+.carousel ul {
+    list-style: none;
+}
+.carousel-buttons li{
+    display: none;
+}
+#carousel .previous, .next{
+    display:none;
+}
+
+.previous{
+    left: 0.5em;
+    right: auto;
+}
+.next{
+    left: auto;
+    right: 0.5em;
+}
+.carousel-single-button{
+    display:none;
+}
+.carousel-buttons .button {
+    text-indent: -99999em;
+}
+.card{
+    box-shadow: none;
+    border: 1px solid;
+    padding: 0.8em;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
+.card h1, .card h2{
+    color: #570606;
+    font-size: 1.5em;
+}
+.card ul{
+    list-style: none;
+}
+
+/* *******SCELTA AUTO/PISTA******* */
+.choice-container {
+  margin-top: 2em;
+  border:none;
+}
+
+#choice-container img {
+  border-radius: 0.8em;
+  width: 100%;
+}
+#choice-container legend {
+  color: #570606;
+  font-size:1.5em;
+}
+
+#next-choice {
+  float: right;
+}
+.choice-recap {
+  margin-top: 1em;
+}
+#choice-display .nome-pista {
+  color: red;
+}
+#button-container {
+  margin-top: 2em;
+}
+  
+  /* *******    CARRELLO/RECAP    ************ */
+  .recap img {
+    width: 30%;
+  }
+  
+  .recap-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .date-choice {
+    padding-top: 1em;
+  }
+  .clickable {
+    cursor: pointer;
+  }
+  #dates .card:hover {
+    box-shadow: rgba(87, 6, 6, 0.5) 0px 2px 5px 2px;
+  }
+  #dates.gallery {
+    grid-template-columns: 50% 50%;
+  }
+  .gallery-item .date-details h4 {
+    font-size: 1.5em;
+  }
+  .gallery-item .date-details h5 {
+    margin-bottom: 0.8em;
+  }
+  .gallery-item .date-details .book {
+    font-size: 0.8em;
+    font-weight: 500;
+  }
+  .card-selected {
+    box-shadow: rgba(87, 6, 6, 0.6) 0px 2px 5px 2px;
+  }
+  .select-lap {
+    display: flex;
+    gap: 3em;
+  }
+  .select-lap-number {
+    display: flex;
+  }
+  .select-lap-number button.button[onclick="stepDown()"] {
+    display:none;
+  }
+  .select-lap-number button.button[onclick="stepUp()"] {
+    display:none;
+  }
+  .select-lap-number input[type="number"] {
+    min-width: 6em;
+    font-size: medium;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+    text-align: center;
+    font-weight: 600;
+    border: none;
+  }
+  .select-lap-number input[type="number"]::-webkit-inner-spin-button,
+  .select-lap-number input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+  }
+  .booking-details-container {
+    padding-top: 2em;
+    padding-bottom: 1em;
+  }
+  
+  .booking-details {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .buy-button {
+    float: right;
+  }
+  
+  /* ******* CHECKOUT ******** */
+  .checkout-text a {
+    color: #ca3c25;
+    text-decoration: underline;
+  }
+  .checkout-text a:visited {
+    color: #570606;
+    text-decoration: underline;
+  }
+  .checkout {
+    display: flex;
+    padding-top: 1em;
+  }
+  .checkout-details {
+    width: 50%;
+  }
+  .checkout-details h2 {
+    padding-bottom: 0.5em;
+  }
+  .checkout-details h3 {
+    padding-bottom: 0.3em;
+  }
+  .checkout .user-data-form {
+    margin: auto;
+  }
+
+
+
+/************AREA RISERVATA**************** */
+#area-riservata-container h1 {
+    font-size: 1.8em;
+    text-align: center;
+  }
+  .grid-container {
+    display: grid;
+    column-gap: 4em;
+    row-gap: 0.8em;
+    width: 100%;
+    grid-template-columns: 1fr 2fr;
+  }
+  .grid-container button {
+    width: 100%;
+  }
+  .grid-item {
+    display: flex;
+    text-align: left;
+  }
+  .grid-item input[type="file"] {
+    border: none;
+  }
+  .grid-container .input-row input {
+    line-height: 1.5em;
+  }
+  .action-selector {
+    background-color: lightgrey;
+  }
+  .action-selector .nav-menu {
+    padding: 0;
+  }
+  .action-selector .header-item {
+    background-color: lightgrey;
+  }
+
+  .action-selector .header-item:hover {
+    background-color: rgb(184, 183, 183);
+  }
+
+  .action-selector .header-item {
+    padding: 0;
+    margin: 0;
+  }
+  .action-selector .header-button {
+    border: none;
+    background-color: lightgrey;
+    outline: inherit;
+    cursor: pointer;
+    width: 100%;
+    font-weight: normal;
+    min-height: 3.5em;
+    padding: 0 0.8em;
+    font-family: inherit;
+  }
+  .action-selector .header-button:disabled {
+    color: black;
+    font-weight: bold;
+  }
+  .success-message {
+    color: green;
+  }
+  .error-message {
+    color: red;
+  }
+  
+  
+  
+  

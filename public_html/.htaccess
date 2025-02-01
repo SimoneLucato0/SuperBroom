@@ -1,0 +1,2 @@
+RewriteEngine on
+ErrorDocument 404 http://localhost:8080/mgreggio/404.php
