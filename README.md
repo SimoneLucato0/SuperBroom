@@ -1,5 +1,7 @@
 # SuperBroom
 
+![Progetto senza titolo (1)](https://github.com/user-attachments/assets/4d33705f-d3b4-45be-98d6-a0590dfc4993)
+
 This project was conducted as the final assignment for the 2021/2022 Web Technologies course, led by Prof. Ombretta Gaggi at the University of Padova.
 
 ## Authors
@@ -19,9 +21,10 @@ The core idea of the project was to create an accessible user experience, regard
 
 ## Key features
 
-- **Modern design**: The application uses the most up-to-date UX features, for example carousels and tab panels, which are notoriously complex to be made accessible. They were built following WAI-ARIA practices by W3C, as well as documentation on `aria-live` regions.
+- **Modern design**: The application uses the most up-to-date user experience features, for example carousels and tab panels, which are notoriously complex to be made accessible. They were built following WAI-ARIA practices by W3C, as well as documentation on `aria-live` regions.
 - **Screen Reader Compatibility**: Optimized content structure and semantic HTML to ensure smooth navigation and comprehension for users relying on screen readers.
 - **Keyboard Navigation**: Full functionality accessible through keyboard controls, enabling users who can't use a mouse to easily navigate the site.
+- **Responsive Design Adaptation**: The application uses flexible layout that automatically adjusts the website's design and functionality across different devices, ensuring optimal user experience whether accessed on desktop, tablet, or mobile screens.
 
 ## Getting started
 
